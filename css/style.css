@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 65%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    color: white;
+    width: 100%;
+    position: fixed;
+    height: 3rem;
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    top: 0;
+    right:0;
+    z-index: 1;
+}
+
+.logoContainer{
+    display: inline-block;
+    margin-left:1rem;
+}
+
+#logo{
+    width: 10rem;
+}
+
+.navLinks{
+    float: right;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.link{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.linkStyle{
+    text-decoration: none;
+    color: white;    
+}
+
+.transition{
+    
+    transition: all 0.3s;
+}
+
+.transition:hover{
+    border-bottom: 0.2rem solid orange;
+}
+
+.banner{
+    text-align: center; 
+    height: 100vh;    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bannerAboutImg{
+    
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/bannerAbout.jpg");
+}
+
+.bannerProjectImg{
+    
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/bannerPortfolio.jpg");
+}
+.bannerContactImg{
+    
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/contactBanner.jpg");
+}
+
+.textBox{
+    text-align: center;    
+    text-transform: uppercase;
+    position: relative;
+    top: 15rem;
+}
+h1{
+    color:white;
+}
+
+.mainTagLine{
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    display: block;
+    margin-bottom: 2rem;    
+    animation: moveDown 1s ease-out;
+}
+.subTagLine{
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    display: block;    
+    animation: moveUp 1s ease-out;
+    margin-bottom: 5rem;
+}
+
+.findLink{
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    background-color: orange;
+    border-radius: 100rem;
+    border: 0rem solid orange;
+    transition: all 1s;
+}
+
+.findLink:hover{
+    border: 0.2rem solid orange;
+    background-color:transparent;
+}
+
+.area{
+    text-align: center; 
+    height: 100% ;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.aboutAreaImg{
+    
+    background-image:linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0.5)),url("../img/aboutMe.jpg");
+}
+
+h2{
+    text-transform: uppercase;
+    padding: 3rem;
+    font-size: 2.2rem;
+}
+.aboutInfo{
+    text-align: center;
+    float: left;
+    width: 68.5%;
+    animation: moveRight 1s ease-out;
+    color:rgba(0, 0,0,0.4);
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2rem 0.5rem;
+    display: block;
+    border-top: 0.2rem solid rgba(255,165,0,0.4);
+    border-bottom: 0.2rem solid rgba(255,165,0,0.4);
+    border-top-right-radius: 100rem;
+    border-bottom-left-radius: 25rem;
+}
+.aboutMe{
+    display: block;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.7);
+    margin-top: 1rem;
+    text-shadow: 0.1rem 0.1rem rgba(0,0,0,0.15); 
+}
+.split50{
+    width: 50%;
+}
+
+.floatRight{
+    float: right;
+}
+.floatLeft{
+    float: left;
+}
+
+footer{
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 2rem;
+    text-align: center;
+    color:white;
+}
+.fa{
+    font-family: 'Open Sans', sans-serif; 
+    font-size:1.5rem !important;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 2rem;
+}
+.fa-twitter:hover{
+    color:skyblue;
+}
+
+.fa-facebook:hover{
+    color:#5F92FF;
+}
+
+.fa-instagram:hover{
+    color:#C93693;   
+}
+
+.marginIcons{
+    margin-left:2rem;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.cardImg{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.cardImg img{
+    border:1rem solid #22a6b3; 
+    border-bottom:3rem solid #22a6b3; 
+    width: 15rem;
+    box-shadow:1rem 1rem 2rem grey;
+    transition: all 1s;
+}
+
+.cardImg img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h4{
+    font-size: 1rem;
+    padding: 1rem;
+}
+h5{
+    font-size:0.8rem;
+    padding: 0.4rem;
+    color: rgba(0,0,0,0.6);
+}
+.area a{
+    text-decoration: none;
+}
+.experienceArea{
+    background-color: lightgray;
+}
+
+form{
+    font-size: 1rem;
+    padding: 2rem;
+    box-shadow: 0.2rem 0.2rem 5rem grey;
+}
+label{
+    display: block;
+    margin-top: 1rem;
+}
+input{
+    border-radius: 25rem;
+    border: 0.1rem solid black;
+    width: 20rem;
+    height:2rem;
+    padding: 1rem;
+}
+textarea{
+    border: 0.1rem solid black;
+    width: 20rem;
+    border-radius: 2rem;
+    height: 10rem;
+    padding: 1rem;
+}
+fieldset{
+    border: 0;
+}
+button{
+    display: block;
+    padding:1rem;
+    margin-top:2rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 0.2rem solid orange;
+    box-shadow: 0.1rem 0.1rem 1rem grey;
+    transition: all 0.2s;
+    width:10rem;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(+0.5rem);
+    box-shadow: 0.4rem 0.8rem 1rem grey;
+}
+
+button:active{    
+    transform: translateY(-0.5rem);
+    box-shadow: 0.2rem 0.4rem 1rem grey;
+}
+
+#project li{
+    margin:0 2rem;
+    display: inline-block;
+    width: 20%;
+    padding: 0rem;
+}
+
+#project a{
+    color: black;
+}
+
+#experienceList li{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+ul{
+    padding: 1rem;
+    list-style-type: none;
+}
+
+/*animations
+*/
+@keyframes moveDown{
+    0%{
+        transform: translateY(-5rem);
+    }
+    
+    50%{
+        transform: translateY(1.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(+5rem);
+    }
+    
+    50%{
+        transform: translateY(-1.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+/*media queries*/
+@media only screen and (max-width:1400px){
+    #project li{
+        display: block;
+        width:100%;
+        margin:0 0 ;
+    }
+}
+
+@media only screen and (max-width:600px){
+    form{
+        font-size: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0.2rem 0.2rem 5rem grey;
+    }
+    label{
+        display: block;
+        margin-top: 1rem;
+    }
+    input{
+        border-radius: 25rem;
+        border: 0.1rem solid black;
+        width: 15rem;
+        padding: 0.5rem;
+    }
+    textarea{
+        border: 0.1rem solid black;
+        width: 15rem;
+        border-radius: 2rem;
+        height: 5rem;
+        padding: 1rem;
+    }
+    fieldset{
+        border: 0;
+    }
+    button{
+        display: block;
+        padding:1rem;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        background-color: transparent;
+        border: 0.2rem solid orange;
+        box-shadow: 0.1rem 0.1rem 1rem grey;
+        transition: all 0.2s;
+        width:5rem;
+        
+    }
+    .mainTagLine{
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+        display: block;
+        margin-bottom: 2rem;    
+        animation: moveDown 1s ease-out;
+    }
+    
+    .subTagLine{
+        font-size: 0.5em;
+        letter-spacing: 0.3rem;
+        display: block;    
+        animation: moveUp 1s ease-out;
+        margin-bottom: 5rem;
+    }
+    .findLink{
+        padding: 1rem 3rem;
+        font-weight: 700;
+        font-size: 0.5rem;
+        letter-spacing: 0.3rem;
+        background-color: orange;
+        border-radius: 100rem;
+        border: 0rem solid orange;
+        transition: all 1s;
+    }
+    .navLinks{
+        float: right;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .navLinks .link{
+        display: inline-block;
+        margin-left: 0rem;
+    }
+    #logo{
+        width: 10rem;
+    }
+    .split50{
+        width: 100%;
+    }
+    .floatRight{
+        float: none;
+    }
+    .floatLeft{
+        float: none;
+    }
+    .aboutInfo{
+        width:100%;
+    }
+    .bannerAboutImg{
+    
+        background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/bannerAboutMobile.jpg");
+    }
+
+    .bannerProjectImg{
+
+        background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/bannerPortfolioMobile.jpg");
+    }
+    .bannerContactImg{
+
+        background-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.3) ),url("../img/contactBannerMobile.jpg");
+    }
+    .banner{
+        height:70vh;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    h5{
+        font-size: 0.7rem;
+    }
+    .cardImg img{
+        border:1rem solid #22a6b3; 
+        border-bottom:3rem solid #22a6b3; 
+        width: 10rem;
+        box-shadow:1rem 1rem 2rem grey;
+        transition: all 1s;
+    }
+}
